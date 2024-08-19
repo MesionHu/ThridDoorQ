@@ -1,2 +1,4 @@
+import random
 def SET_REWARD(Doors):
-    print(len(Doors))
+    Reward_number=random.randint(0,len(Doors)-1)
+    Doors[Reward_number]=1
