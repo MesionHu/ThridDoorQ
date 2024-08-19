@@ -1,2 +1,3 @@
 import Form
-Form.INIT_Door(3)
+Doors=Form.INIT_Door(3)
+print(Doors)
