@@ -11,6 +11,8 @@ def SET_HOSTER(Doors,NUMBER):
     Host_number=random.randint(0,len(Doors)-1)
     if Host_number==NUMBER:
         SET_HOSTER(Doors,NUMBER)
+    elif Doors[Host_number]==2:
+        SET_HOSTER(Doors,NUMBER)
     elif Doors[Host_number]!=1:
         Doors[Host_number]=2
     else:
