@@ -1,11 +1,9 @@
-import Form
-import Function
+import MASSTEST
 
 DOOR_NUMBER=3
+N=1000
+CHANGE=MASSTEST.CHANGE_DOOR(N,DOOR_NUMBER)
+NOT_CHANGE=MASSTEST.NOT_CHANGE_DOOR(N,DOOR_NUMBER)
 
-Doors=Form.INIT_Door(DOOR_NUMBER)
-Function.SET_REWARD(Doors)
-Function.SET_HOSTER(Doors)
-PLAYER_DOOR=Function.SET_PLAYER(DOOR_NUMBER)
-print(Doors)
-print(PLAYER_DOOR)
+print("进行更换的概率:",CHANGE/N)
+print("进行不更换的概率:",NOT_CHANGE/N)
